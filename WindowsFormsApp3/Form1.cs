@@ -52,16 +52,16 @@ namespace WindowsFormsApp3
             // Получение исходных данных из TextBox 
             try
             {
-                double x = Convert.ToDouble(textBox2.Text);
-                double y = Convert.ToDouble(textBox1.Text);
+                double x = Convert.ToDouble(textBox1.Text);
+                double y = Convert.ToDouble(textBox2.Text);
                 double z = Convert.ToDouble(textBox3.Text);
                 double u;
             
             // Ввод исходных данных в окно результатов
             textBox4.Text = "Результаты работы программы " + "Bogdan Sh." +
             Environment.NewLine;
-            textBox4.Text += "При X = " + textBox2.Text + Environment.NewLine;
-            textBox4.Text += "При Y = " + textBox1.Text + Environment.NewLine;
+            textBox4.Text += "При X = " + textBox1.Text + Environment.NewLine;
+            textBox4.Text += "При Y = " + textBox2.Text + Environment.NewLine;
             textBox4.Text += "При Z = " + textBox3.Text + Environment.NewLine;
             // Вычисление выражения double u;
            
@@ -116,6 +116,11 @@ namespace WindowsFormsApp3
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
